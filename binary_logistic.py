@@ -71,9 +71,9 @@ def print_score(clf, X_train, y_train, X_test, y_test):
 def plot_confusion_matrix(cm, labels):
     fig, ax = plt.subplots()
     sns.heatmap(cm, annot=True, fmt='d', cmap='Blues', xticklabels=labels, yticklabels=labels, ax=ax, annot_kws={"size": 24, "weight": "bold"})
-    ax.set_xlabel('예측 레이블')
-    ax.set_ylabel('실제 레이블')
-    ax.set_title('혼동 행렬')
+    ax.set_xlabel('Predicted Label')
+    ax.set_ylabel('Actual Label')
+    ax.set_title('Confusion Matrix')
     st.pyplot(fig)
 
 

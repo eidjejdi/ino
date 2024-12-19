@@ -115,7 +115,7 @@ if uploaded_file:
             # 시각화
             fig, ax = plt.subplots()
             ax.scatter(y_test, y_pred)
-            ax.set_xlabel('실제 값')
-            ax.set_ylabel('예측 값')
-            ax.set_title(f'{model_type} 회귀 예측 결과')
+            ax.set_xlabel('Actual Value')
+            ax.set_ylabel('Predicted Value')
+            ax.set_title(f'{model_type} Regression Prediction Results')
             st.pyplot(fig)
